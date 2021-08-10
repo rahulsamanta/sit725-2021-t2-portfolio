@@ -1,5 +1,5 @@
 {
-  "name": "sit725-2021-t2-prac2",
+  "name": "sit725-2021-t2-prac4",
   "version": "1.0.0",
   "description": "Simple Express server",
   "main": "index.js",
@@ -8,17 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rahulsamanta/sit725-2021-t2-prac2.git"
+    "url": "git+https://github.com/rahulsamanta/sit725-2021-t2-prac4.git"
   },
   "author": "Rahul Samanta",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rahulsamanta/sit725-2021-t2-prac2/issues"
+    "url": "https://github.com/rahulsamanta/sit725-2021-t2-prac4/issues"
   },
-  "homepage": "https://github.com/rahulsamanta/sit725-2021-t2-prac2#readme",
+  "homepage": "https://github.com/rahulsamanta/sit725-2021-t2-prac4#readme",
   "dependencies": {
     "express": "^4.17.1",
     "materialize-css": "^1.0.0-rc.2",
+    "mongodb": "^4.1.0",
     "nodemon": "^2.0.12"
   }
 }
