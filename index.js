@@ -1,9 +1,11 @@
+require('dotenv').config();
+
 const express = require('express');
-const path = require('path');
-const { MongoClient } = require('mongodb');
+const mongoose = require('mongoose');
+// const { MongoClient } = require('mongodb');
 
 const app = express()
-const PORT=3000;
+const PORT= process.env.PORT || 5000;
 
 // Making all files under public directory available to project
 app.use(express.static(__dirname+'/public'))
@@ -21,40 +23,32 @@ app.listen(PORT)
 console.log('Server started at http://localhost:' + PORT);
 
 // Function to connect to MongoDB and perform operations
-async function database(){
+// async function database(){
     
-    const uri = "mongodb+srv://admin:SVJ2iux5XUZG7Xak@sit725-cluster.lm2gt.mongodb.net/portfolio?retryWrites=true&w=majority";
+//     const uri = process.env.MONGO_DB_URI;
 
-    const client = new MongoClient(uri);
+//     const client = new MongoClient(uri);
  
-    try {
-        // Connect to the MongoDB cluster
-        await client.connect();
-        console.log("Database connection successful!");
-
-        // Insert a single record into database collection
-        await insertRecord(client,
-            {
-                name: "Rahul Samanta",
-                description: "Software Developer",
-                projects: 3
-            }
-        );
-
-        console.log("Record insertion completed!");
-        
+//     try {
+//         // Connect to the MongoDB cluster
+//         await client.connect();
+//         console.log("Database connection successful!");
  
-    } catch (e) {
-        console.error(e);
-    } finally {
-        await client.close();
-    }
-}
+//     } catch (e) {
+//         console.error(e);
+//     } finally {
+//         await client.close();
+//     }
+// }
 
-database().catch(console.error);
+// database().catch(console.error);
 
-// Inserting single entry into database collection
-async function insertRecord(client, newRecord){
-    const result = await client.db("portfolio").collection("selfDetails").insertOne(newRecord);
-    console.log(`New record created with the following id: ${result.insertedId}`);
-}
+// Function to connect to MongoDB and perform operations
+mongoose.connect(process.env.MONGO_DB_URI, {useNewUrlParser: true, useUnifiedTopology: true});
+
+// Testing database connectivity
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'Connection error:'));
+db.once('open', function() {
+    console.log("Database connection successful!");
+});
