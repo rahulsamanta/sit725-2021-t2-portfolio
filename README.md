@@ -36,11 +36,11 @@ browser:
 Next, test it by visiting the following URL in your
 browser:
 
-    http://localhost:5000/hello
+    http://localhost:5000/test
 
-When you visit the above url the content will be Hello World
+When you visit the above url the content will assert Express is working!
 
-    Hello World
+    Express is working!
 
 Files in this repository
 --------------------------------------------------------------------------------
