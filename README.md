@@ -1,4 +1,4 @@
-# sit725-2021-t2-prac5
+# sit725-2021-t2-prac6
 Tasks related to SIT725 Practicals
 
 Update: Added MVC structure

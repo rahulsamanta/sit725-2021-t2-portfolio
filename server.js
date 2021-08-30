@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // Checks if express is working
 app.get('/test',function(req, res){
-    console.log('This is my home page')
+    console.log('This is a sample test text!')
     res.send('Express is working!')
 })
 
