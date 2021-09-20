@@ -1,7 +1,7 @@
-# sit725-2021-t2-prac6
+# sit725-2021-t2-prac9
 Tasks related to SIT725 Practicals
 
-Update: Added MVC structure
+Update: Added Dockerfile
 
 This boilerplate is sourced from [Alessio Bonti's boilerplate of a NodeJS project](https://github.com/alexbonti/deakin-crowds).
 
@@ -41,6 +41,27 @@ browser:
 When you visit the above url the content will assert Express is working!
 
     Express is working!
+
+Run this app from a Docker container. Install Docker in your local system following the guidelines [here](https://docs.docker.com/get-started/).
+
+Once docker is installed and running, open terminal in the application's root directory
+and build the app using the command
+
+    docker build -t rahulsamanta:portfolio .
+
+Verify that the image has been created from the above step by running
+    
+    docker images
+
+Run the image using command
+
+    docker run -d -p 5000:5000 rahulsamanta:portfolio
+
+Verify that the Docker image has started running successfully, check for the image *rahulsamanta:portfolio*
+by running command
+
+    docker ps
+
 
 Files in this repository
 --------------------------------------------------------------------------------

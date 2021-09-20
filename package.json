@@ -1,5 +1,5 @@
 {
-  "name": "sit725-2021-t2-prac6",
+  "name": "sit725-2021-t2-prac9",
   "version": "1.0.0",
   "description": "Portfolio website",
   "main": "server.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rahulsamanta/sit725-2021-t2-prac6.git"
+    "url": "git+https://github.com/rahulsamanta/sit725-2021-t2-prac9.git"
   },
   "author": "Rahul Samanta",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rahulsamanta/sit725-2021-t2-prac6/issues"
+    "url": "https://github.com/rahulsamanta/sit725-2021-t2-prac9/issues"
   },
-  "homepage": "https://github.com/rahulsamanta/sit725-2021-t2-prac6#readme",
+  "homepage": "https://github.com/rahulsamanta/sit725-2021-t2-prac9#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "chai": "*",
