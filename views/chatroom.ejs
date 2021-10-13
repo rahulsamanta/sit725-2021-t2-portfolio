@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="css/chat-room.css">
+
+<div class="container">
+    <div class="row">
+        <div class="center col s12 m12">
+            <div class="card">
+                <div class="card-content blue-text">
+                    <h4>Create or Join a Chatroom</h4>
+                    <form action="/chat">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">face</i>
+                                <input id="username" name="username" type="text" class="validate" data-length="20">
+                                <label for="username">What is your name?</label>
+                                <span class="helper-text"
+                                    data-error="Sorry! Your name is too long. Please use a nickname or simply use your initials."
+                                    data-success="Hey there, nice to meet you!"></span>
+                            </div>
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">group</i>
+                                <input id="room" name="room" type="text" class="validate" data-length="20">
+                                <label for="room">Create a new chat room or enter an existing room name</label>
+                                <span class="helper-text"
+                                    data-error="Your chat room name is too long. Please use a shorter name."
+                                    data-success="Enjoy the session!">Create a private chat room and share the room name
+                                    with your
+                                    buddies so
+                                    they can join in.</span>
+                            </div>
+                        </div>
+                        <button class="btn waves-effect waves-light" type="submit">Start Chatting
+                            <i class="material-icons right">chat_bubble</i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/chatRoom.js"></script>

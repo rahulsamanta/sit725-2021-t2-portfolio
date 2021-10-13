@@ -1,20 +1,28 @@
-# sit725-2021-t2-prac9
-Tasks related to SIT725 Practicals
+# sit725-2021-t2-portfolio
+The highlight of this portfolio project is a socket-based chatroom app which can be used for both public and private conversations. The user has the ability to enter a chatroom name to start the chat. They can then share the chatroom name with a buddy for them to join as well.
+
+For single user testing in local machine, open the same link i.e. `http://127.0.0.1:5000/` in two different browsers.
 
 Update: Added Dockerfile
 
 This boilerplate is sourced from [Alessio Bonti's boilerplate of a NodeJS project](https://github.com/alexbonti/deakin-crowds).
 
 It comprises of jQuery for advanced manipulations
-Materialize for the UI interface
+Materialize CSS for the UI interface
 Socket IO for real time comunications
 
-After installing, run the server using
+Drop the .env file given during submission in the project root directory.
+
+Open a terminal in root directory and run
+
+    npm i
+
+After installing the dependencies, run the server using
 
     npm start
 
 If instead, you get something like the following, someone is already
-using the default port of 5000:
+using the default port of 5000, change it to some other value like 8080 in the `.env` file:
 
     Server running at http://127.0.0.1:5000/
 

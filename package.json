@@ -21,10 +21,16 @@
     "body-parser": "^1.19.0",
     "chai": "*",
     "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.2",
+    "http": "*",
     "mocha": "*",
-    "mongoose": "^6.0.0",
-    "nodemon": "^2.0.12",
-    "request": "^2.88.2"
+    "mongoose": "^6.0.5",
+    "nodemon": "*",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "socket.io": "^4.2.0"
   }
 }

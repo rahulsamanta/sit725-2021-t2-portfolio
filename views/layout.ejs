@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rahul Samanta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- socket IO Served by the server -->
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+
+</body>
+<%- include ("./partials/navigation") %>
+
+<main>
+    <%- body %>
+</main>
+
+<!-- Start::Footer -->
+<footer class="page-footer light-blue darken-3">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">You have reached the bottom of this scrolling experience. You have been
+                    scrolling too
+                    fast...</h5>
+                <p class="grey-text text-lighten-4">Scroll up again if you wanna indulge yourself and count all the
+                    colours!</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Reach me here:</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/rahulsamanta/">LinkedIn</a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://discord.com/users/Rahul%20Samanta#7395">Discord</a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://twitter.com/rahulsam_tweets">Twitter</a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/profile.rahul.samanta/">Messenger</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright right-align">
+        <div class="container">
+            © 2021 Rahul Samanta
+        </div>
+    </div>
+</footer>
+<!-- End::Footer -->
+
+<!-- Scripts -->
+<script src="js/init.js"></script>
+
+</html>
